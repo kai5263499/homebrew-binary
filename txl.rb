@@ -12,6 +12,12 @@ class Txl < Formula
     sha256 "6018e2c7210c8fc619354a346224086aa5eef3c1bddfa5fd6726659aa6ef84be"
   end
 
+  def caveats; <<-EOS.undent
+    We agreed to the TXL terms and conditions for you.
+    If this is unacceptable you should uninstall.
+    EOS
+  end
+
   bottle :unneeded
 
   def install
